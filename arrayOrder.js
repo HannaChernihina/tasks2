@@ -76,12 +76,12 @@ const newProduct = [...products];
        return newProduct.filter(product => {
     
        return order.productIds.reduce((acc, id) => {
-       return id
-
+       
         if(id == newProduct.id){
-                return order.productIds.concat(product);    
+                return order.productIds.push(product);    
             } 
         }, 0);
+
 
      
 }
