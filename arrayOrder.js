@@ -65,3 +65,31 @@ function getOrderWithProduct(orders, products){
  
 }
   
+  
+//   -------------------------
+  
+  function getOrderWithProduct(orders, products){
+const newORder = [...orders];
+const newProduct = [...products];
+
+    return newORder.map(order => {
+       return newProduct.filter(product => {
+    
+       return order.reduce((acc, id) => {
+       return order.productIds[i]
+
+        if(order.productIds[i] == newProduct.id){
+                return order.productIds.concat(product);    
+            } 
+        }, 0);
+
+        
+
+         
+}
+ )} );
+ 
+}
+  
+  
+  
