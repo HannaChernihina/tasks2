@@ -89,3 +89,16 @@ const newProduct = [...products];
 }
   
   
+  
+  const getOrderWithProduct = () =>
+  orders.map((item) => {
+    return ({ ...item, productIds: products.filter((productsItem) => {
+        return item.productIds.find((findId) => {
+          return findId === productsItem.id;
+        });
+      }),
+    });
+  });
+
+console.log(getOrderWithProduct());
+  
